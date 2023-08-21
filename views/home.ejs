@@ -1,0 +1,19 @@
+<!-- insert header and footer -->
+<%-include("partials/header"); %>
+
+<h1>Home</h1>
+<p><%=para%></p>
+<%blog.forEach(function(idx){%>
+    <div>
+        <h2><%=idx.title%></h2>
+    </div>
+<div>
+    <p><%=idx.para%></p>
+</div>
+
+<%});%>
+
+
+
+
+<%-include("partials/footer"); %>
